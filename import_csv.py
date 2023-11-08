@@ -4,14 +4,9 @@ from datetime import datetime
 import uuid
 
 # Read the stadium CSV file into a dictionary
-
 with open('stadium.csv', 'r', encoding='utf-8') as f:
     reader = csv.DictReader(f)
     stadiums = {row['Team']: row['Stadium'] + ', ' + row['City'] for row in reader}
-
-with open('stadium.csv', 'r', encoding='utf-8') as f:
-    reader = csv.DictReader(f)
-    stadiums = {row['Team']: row['Stadium'] for row in reader}
 
 def csv_row_to_json(row):
     away_team, home_team, time, time_zone = '', '', '', ''
@@ -47,11 +42,22 @@ def csv_row_to_json(row):
         "createdAt": createdAt.replace(".000+00:00", ""),
         "updatedAt": updatedAt.replace(".000+00:00", "")
     }
+
+# Create a dictionary where the keys are the weeks and the values are lists of games
+games_by_week = {}
+
 with open('schedule.csv', 'r') as f:
     reader = csv.DictReader(f)
-    games = [csv_row_to_json(row) for row in reader]
+    for row in reader:
+        game = csv_row_to_json(row)
+        week = row['Week']  # Using the 'Week' column
+        if week not in games_by_week:
+            games_by_week[week] = []
+        games_by_week[week].append(game)
 
-with open('schedule.json', 'w') as f:
-    json.dump(games, f, indent=4)
+# For each week, write the games to a new JSON file
+for week, games in games_by_week.items():
+    with open(f'schedule_week_{week}.json', 'w') as f:
+        json.dump(games, f, indent=4)
 
-print("The file has been written successfully.")
+print("The files have been written successfully.")
