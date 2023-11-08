@@ -38,8 +38,8 @@ def csv_row_to_json(row):
         "location": stadiums.get(home_team, 'unk'),  # Use 'unk' if stadium is unknown
         "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",  # Updated hardcoded image
         "winner": 0,  # Set winner to 0 for all records
-        "createdAt": createdAt.replace(".000+00:00", ""),
-        "updatedAt": updatedAt.replace(".000+00:00", "")
+        "createdAt": {"$date": createdAt.replace(".000+00:00", "")},
+        "updatedAt": {"$date": updatedAt.replace(".000+00:00", "")}
     }
 
 games_by_week = {}

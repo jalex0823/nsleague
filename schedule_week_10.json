@@ -1,0 +1,254 @@
+[
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Chicago Bears",
+        "team2": "Carolina Panthers",
+        "date": "2023-11-09T19:15",
+        "timeZone": "CST",
+        "location": "Soldier Field",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "",
+        "team2": "",
+        "date": "2023-11-12T15:30",
+        "timeZone": "CEST",
+        "location": "unk",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Baltimore Ravens",
+        "team2": "Cleveland Browns",
+        "date": "2023-11-12T13:00",
+        "timeZone": "EST",
+        "location": "M&T Bank Stadium",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Cincinnati Bengals",
+        "team2": "Houston Texans",
+        "date": "2023-11-12T13:00",
+        "timeZone": "EST",
+        "location": "Paycor Stadium",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Jacksonville Jaguars",
+        "team2": "San Francisco 49ers",
+        "date": "2023-11-12T13:00",
+        "timeZone": "EST",
+        "location": "EverBank Stadium",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Minnesota Vikings",
+        "team2": "New Orleans Saints",
+        "date": "2023-11-12T12:00",
+        "timeZone": "CST",
+        "location": "U.S. Bank Stadium",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Pittsburgh Steelers",
+        "team2": "Green Bay Packers",
+        "date": "2023-11-12T13:00",
+        "timeZone": "EST",
+        "location": "Acrisure Stadium",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Tampa Bay Buccaneers",
+        "team2": "Tennessee Titans",
+        "date": "2023-11-12T13:00",
+        "timeZone": "EST",
+        "location": "Raymond James Stadium",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Arizona Cardinals",
+        "team2": "Atlanta Falcons",
+        "date": "2023-11-12T14:05",
+        "timeZone": "MST",
+        "location": "State Farm Stadium",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Los Angeles Chargers",
+        "team2": "Detroit Lions",
+        "date": "2023-11-12T13:05",
+        "timeZone": "PST",
+        "location": "SoFi Stadium",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Dallas Cowboys",
+        "team2": "New York Giants",
+        "date": "2023-11-12T15:25",
+        "timeZone": "CST",
+        "location": "AT&T Stadium",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Seattle Seahawks",
+        "team2": "Washington Commanders",
+        "date": "2023-11-12T13:25",
+        "timeZone": "PST",
+        "location": "Lumen Field",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Las Vegas Raiders",
+        "team2": "New York Jets",
+        "date": "2023-11-12T17:20",
+        "timeZone": "PST",
+        "location": "Allegiant Stadium",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    },
+    {
+        "game": {
+            "$oid": "64d4878161069f450ebac5da"
+        },
+        "team1": "Buffalo Bills",
+        "team2": "Denver Broncos",
+        "date": "2023-11-13T20:15",
+        "timeZone": "EST",
+        "location": "Highmark Stadium",
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",
+        "winner": 0,
+        "createdAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        },
+        "updatedAt": {
+            "$date": "2023-11-08T15:27:41.463259+00:00"
+        }
+    }
+]
