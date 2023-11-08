@@ -1,22 +1,22 @@
 import csv
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 import uuid
 
-# Read the stadium CSV file into a dictionary
 with open('stadium.csv', 'r', encoding='utf-8') as f:
     reader = csv.DictReader(f)
-    stadiums = {row['Team']: row['Stadium'] + ', ' + row['City'] for row in reader}
+    stadiums = {row['Team']: row['Stadium'] for row in reader}
 
 def csv_row_to_json(row):
     away_team, home_team, time, time_zone = '', '', '', ''
     if ' at ' in row['Game']:
-        away_team, home_team = row['Game'].split(' at ')
+        game = row['Game'].split(' (')[0]  # Exclude everything in parentheses
+        away_team, home_team = game.split(' at ')
     if ' (' in row['Time']:
         time, time_zone = row['Time'].split(' (')  # Split the 'Time' field into time and time zone
         time_zone = time_zone.rstrip(')')  # Remove the closing parenthesis from the time zone
-    createdAt = datetime.utcnow().isoformat() + "Z"
-    updatedAt = datetime.utcnow().isoformat() + "Z"
+    createdAt = datetime.now(timezone.utc).isoformat()
+    updatedAt = datetime.now(timezone.utc).isoformat()
     
     # Convert the date to the format "2023-10-26"
     date = datetime.strptime(row['Date'], "%A, %B %d, %Y").strftime("%Y-%m-%d")
@@ -29,21 +29,19 @@ def csv_row_to_json(row):
     
     # Append the time from the schedule to the date string
     date_time = date + "T" + time_24hr if time else date
-    
     return {
         "game": {"$oid": "64d4878161069f450ebac5da"},  # Hardcode the game $oid
         "team1": home_team,
         "team2": away_team,
         "date": date_time,
         "timeZone": time_zone,
-        "stadium": stadiums.get(home_team, ''),
-        "image": "adminImage/1K5BK64J9E9756KF68271059H9D6.png",  # Hardcode the image
+        "location": stadiums.get(home_team, 'unk'),  # Use 'unk' if stadium is unknown
+        "image": "adminImage/5HJ94G6JK18G4E10GD67J179CDGH.png",  # Updated hardcoded image
         "winner": 0,  # Set winner to 0 for all records
         "createdAt": createdAt.replace(".000+00:00", ""),
         "updatedAt": updatedAt.replace(".000+00:00", "")
     }
 
-# Create a dictionary where the keys are the weeks and the values are lists of games
 games_by_week = {}
 
 with open('schedule.csv', 'r') as f:
@@ -55,7 +53,6 @@ with open('schedule.csv', 'r') as f:
             games_by_week[week] = []
         games_by_week[week].append(game)
 
-# For each week, write the games to a new JSON file
 for week, games in games_by_week.items():
     with open(f'schedule_week_{week}.json', 'w') as f:
         json.dump(games, f, indent=4)
